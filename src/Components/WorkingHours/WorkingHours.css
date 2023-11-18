@@ -6,9 +6,10 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    padding: 50px 0;
 }
 .working-hours-wrapper{
-margin-top: 150px;
+margin-top: 50px;
 padding: 10px;
 }
 .day{
@@ -33,7 +34,7 @@ color: rgba(107, 107, 107, 0.71);
 }
 .day:nth-child(6){
     justify-content: start;
-    gap: 20px;
+  
 
 }
 .day-span{

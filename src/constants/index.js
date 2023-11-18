@@ -10,13 +10,14 @@ import cleaning from "../assets/cleaning.jpg";
 import surgery from "../assets/surgery.jpg";
 
 import eteri from "../assets/dentistImages/eteri.jpg";
+import daria from "../assets/dentistImages/daria.jpg";
 import gulnara from "../assets/dentistImages/gulnara.jpg";
 import qetevan from "../assets/dentistImages/qetevan.jpeg";
 import nodari from "../assets/dentistImages/nodari.jpeg";
 import maia from "../assets/dentistImages/maia.jpeg";
 import maiadiasamidze from "../assets/dentistImages/maiadiasamidze.jpg";
 import nino from "../assets/dentistImages/nino.jpeg";
-import lia from "../assets/dentistImages/lia.jpeg";
+import lia from "../assets/dentistImages/lia.jpg";
 import megi from "../assets/dentistImages/megi.jpeg";
 import orthodontics from "../assets/orthodontics.webp"
 import work1 from '../assets/works/work-1.jpeg'
@@ -72,7 +73,7 @@ export const services = [
   },
   {
     id:3,
-    name: "დენტალური იმპლანტოლოგია",
+    name: "დენტალური იმპლანტაცია",
     img: implanti,
     desc:"კბილების აღდგენის თანამედროვე მეთოდი, როდესაც ხდება ყბის ძვალში ტიტანისაგან და მისი შენადნობებისგან დამზადებული იმპლანტის ჩამაგრება",
     
@@ -118,7 +119,7 @@ export const services = [
   },
   {
     id:5,
-    name: "პარადონტოლოგია",
+    name: "პაროდონტოლოგია",
     img: paradontologia,
     desc:`პაროდონტოლოგია სტომატოლოგიის ერთ-ერთი
     მნიშვნელოვანი დარგია, რომელიც შეისწავლის ღრძილების
@@ -183,7 +184,7 @@ export const services = [
   },
   {
     id:9,
-    name: "სტომატოლოგიური წმენდა",
+    name: "ჰიგიენური წმენდა",
     img: cleaning,
     desc:"სტომატოლოგიური წმენდა გულისხმობს კბილების ზედაპირიდან ნადების და კბილის საფუძვლიან მოცილებას. სტომატოლოგიური ჰიგიენისტი იყენებს სპეციალიზირებულ ინსტრუმენტებს კბილების გასაწმენდად და გასაპრიალებლად, პირის ღრუს ჯანმრთელობის გასაუმჯობესებლად, გაფუჭების თავიდან ასაცილებლად და სუფთა, ნათელი ღიმილის უზრუნველსაყოფად.",
     
@@ -200,38 +201,38 @@ export const services = [
 export const workingHours = [
   {
     day: "ორშაბათი",
-    hours: "9:00 - 20:00",
-    break: "12:00 - 13:00",
+    hours: "10:00 - 19:00",
+    break: "",
     working: true,
   },
   {
     day: "სამშაბათი",
-    hours: "9:00 - 20:00",
-    break: "12:00 - 13:00",
+    hours: "10:00 - 19:00",
+    break: "",
     working: true,
   },
   {
     day: "ოთხშაბათი",
-    hours: "9:00 - 20:00",
-    break: "12:00 - 13:00",
+    hours: "10:00 - 19:00",
+    break: "",
     working: true,
   },
   {
     day: "ხუთშაბათი",
-    hours: "9:00 - 20:00",
-    break: "12:00 - 13:00",
+    hours: "10:00 - 19:00",
+    break: "",
     working: true,
   },
   {
     day: "პარასკევი",
-    hours: "9:00 - 20:00",
-    break: "12:00 - 13:00",
+    hours: "10:00 - 19:00",
+    break: "",
     working: true,
   },
   {
     day: "შაბათი",
-    hours: "",
-    break: "",
+    hours: "10:00 - 16:00",
+   
     working: true,
   },
   {
@@ -446,7 +447,7 @@ export const dentists = [
     name: "პავლოვა დარია დიმიტრიევნა",
     position: "თერაპევტი პაროდონტოლოგი",
     tel: "123",
-    img: nino,
+    img: daria,
     education:[
         '2012-2017 წწ კურსკის სახელმწიფო სამედიცინო უნივერსიტეტი ',
         'ინოვაციური ტექნოლოგიები სტომატოლოგიურ პრაქტიკაში" ანდრეი ზორიანი 18.07.2017',

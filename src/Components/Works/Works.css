@@ -11,6 +11,8 @@
 }
 .works-wrapper{
     display: flex;
+    
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 80px;
     z-index: 1;

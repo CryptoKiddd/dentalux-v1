@@ -15,7 +15,7 @@ import gulnara from "../assets/dentistImages/gulnara.jpg";
 import qetevan from "../assets/dentistImages/qetevan.jpeg";
 import nodari from "../assets/dentistImages/nodari.jpeg";
 import maia from "../assets/dentistImages/maia.jpeg";
-import maiadiasamidze from "../assets/dentistImages/maiadiasamidze.jpg";
+import megimamuladze from "../assets/dentistImages/maiadiasamidze.jpg";
 import nino from "../assets/dentistImages/nino.jpeg";
 import lia from "../assets/dentistImages/lia.jpg";
 import megi from "../assets/dentistImages/megi.jpeg";
@@ -309,7 +309,7 @@ export const dentists = [
     name: "მაია დიასამიძე",
     position: "სტომატოლოგი-თერაპევტი",
     tel: "123",
-    img: maiadiasamidze,
+    img: '',
     education:[
       '1996-2001 მ. აბაშიძის სახელობის ბათუმის დამოუკიდებელი უნივერსიტეტი.(ექიმი სტომატოლოგი)',
       '2002წ საქართველოს სახელმწიფო სამედიცინო აკადემია. სახ. სასერთიფიკაციო გამოცდა (ზოგადი პროფილის ექიმ-სტომატოლოგი)',
@@ -345,7 +345,7 @@ export const dentists = [
     name: "მეგი მამულაძე",
     position: "სტომატოლოგი",
     tel: "123",
-    img: 'https://rukovichnikov.pixieset.com/collection-1/?pid=10054506997&id=121&h=MTY5NTI5Njk5Ng',
+    img: megimamuladze,
   },
   {
     name: "მირანდა მალაყმაძე",

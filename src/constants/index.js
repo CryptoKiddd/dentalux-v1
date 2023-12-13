@@ -18,7 +18,7 @@ import nodari from "../assets/dentistImages/nodari.jpeg";
 import maia from "../assets/dentistImages/maia.jpeg";
 import megimamuladze from "../assets/dentistImages/maiadiasamidze.jpg";
 import nino from "../assets/dentistImages/nino.jpeg";
-import lia from "../assets/dentistImages/lia.jpg";
+import lia from "../assets/dentistImages/lia.jpeg";
 import megi from "../assets/dentistImages/megi.jpeg";
 import orthodontics from "../assets/orthodontics.webp"
 import work1 from '../assets/works/work-1.jpeg'

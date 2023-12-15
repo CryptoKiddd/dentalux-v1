@@ -14,7 +14,7 @@ export const Hero = () => {
             <span className="hero-span">
                 თქვენი უნაკლო ღიმილისთვის
             </span>
-            <a href="https://dentalux.dentos.ge/" onClick={open} className="hero-a">
+            <a href="https://dentalux.dentos.ge/" target='_blank' className="hero-a">
                 დაჯავშნე ვიზიტი
             </a>
         </header>

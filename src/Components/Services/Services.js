@@ -31,7 +31,7 @@ export const Services = () => {
                   <div className="card__body">
         
                     <p>{service.desc}</p>
-                     <a className='service-javshani' href='https://dentos.ge/stomatologiuri-klinikebi/%E1%83%93%E1%83%94%E1%83%9C%E1%83%A2%E1%83%90%E1%83%9A%E1%83%A3%E1%83%A5%E1%83%A1%E1%83%98/?&page=1' >ჩაეწერე</a>
+                     <a className='service-javshani' href='https://dentalux.dentos.ge/' >ჩაეწერე</a>
                   </div> 
                 </div>
               </div>

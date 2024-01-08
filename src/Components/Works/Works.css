@@ -33,34 +33,24 @@
   
 
 }
+.workby{
+    font-size: 13px;
+    font-weight: bold;
+
+
+}
+.workname{
+    font-weight: lighter;
+    font-size: 15px;
+}
 .works-card img{
     width: 100%;
     height: 350px;
     border-radius: 20px;
-    border-bottom-right-radius:0 ;
-    border-bottom-left-radius: 0;
+  
 }
-.work-info{
-    padding-bottom: 50px;
-    
-    
-    backdrop-filter: blur(15px);
-}
-.work-info h3{
-    font-size: 28px;
-    font-weight: 700;
-    color: rgb(16, 58, 30);
-    margin-bottom: 15px;
 
-}
-.work-desc{
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-.work-info span{
-    font-size: 15px;
-    font-weight: 700;
-}
+
 .work-tooth-1{
     position: absolute;
     top: 0px;

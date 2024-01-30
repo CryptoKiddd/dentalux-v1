@@ -36,6 +36,12 @@ import cirk1 from '../assets/works/cirk1.jpeg'
 import cirk2 from '../assets/works/cirk2.jpeg'
 import cirk3 from '../assets/works/cirk3.jpeg'
 import cirk4 from '../assets/works/cirk4.jpeg'
+import br1 from '../assets/works/breketi1.jpeg'
+import br2 from '../assets/works/breketi2.jpeg'
+import br3 from '../assets/works/breketi3.jpeg'
+import br4 from '../assets/works/breketi4.jpeg'
+import br5 from '../assets/works/breketi5.jpeg'
+import br6 from '../assets/works/breketi6.jpeg'
 
 export const services = [
   {
@@ -526,6 +532,21 @@ export const works= [
     doctor:'ქეთევან ყუშიტაშვილი'
   },
   {
+    img:br4,
+    name:'ორთოდონტიული მკურნალობა ბრეკეტ სისტემით',
+    doctor:'ნინო ყუშიტაშვილი'
+  },
+  {
+    img:br5,
+    name:'ორთოდონტიული მკურნალობა ბრეკეტ სისტემით',
+    doctor:'ნინო ყუშიტაშვილი'
+  },
+  {
+    img:br6,
+    name:'ორთოდონტიული მკურნალობა ბრეკეტ სისტემით',
+    doctor:'ნინო ყუშიტაშვილი'
+  },
+  {
     img:cvin3,
     name:'კერამიკული ვინირები',
     doctor:'ქეთევან ყუშიტაშვილი'
@@ -540,6 +561,24 @@ export const works= [
     name:'ცირკონის გვირგვინები',
     doctor:'ქეთევან ყუშიტაშვილი'
   },
+  {
+    img:br1,
+    name:'ორთოდონტიული მკურნალობა ბრეკეტ სისტემით',
+    doctor:'ნინო ყუშიტაშვილი'
+  },
+  {
+    img:br2,
+    name:'ორთოდონტიული მკურნალობა ბრეკეტ სისტემით',
+    doctor:'ნინო ყუშიტაშვილი'
+  },
+  {
+    img:br3,
+    name:'ორთოდონტიული მკურნალობა ბრეკეტ სისტემით',
+    doctor:'ნინო ყუშიტაშვილი'
+  },
+
+
+
   {
     img:cirk2,
     name:'ცირკონის გვირგვინები',

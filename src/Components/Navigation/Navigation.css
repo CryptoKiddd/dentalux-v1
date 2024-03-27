@@ -31,7 +31,7 @@ box-shadow: -1px 4px 8px -3px rgba(0, 0, 0, 0.596);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 30px;
-	padding: 10px;
+	padding: 1px;
 	letter-spacing: 1px;
 	text-decoration: none;
 	overflow: hidden;
@@ -64,7 +64,11 @@ box-shadow: -1px 4px 8px -3px rgba(0, 0, 0, 0.596);
 .logo{
     display: flex;
     align-items: center;
+	height: 50px;
     gap: 7px;
+}
+.logo img{
+	width: 80px;
 }
 .logo span {
     background:linear-gradient(90deg, #96E1E1 8.2%, #009393 137.76%);

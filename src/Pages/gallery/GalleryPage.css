@@ -1,20 +1,29 @@
 .gallerypage-container{
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    margin: 0rem;
-    overflow: hidden;
+    width: 1400px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 40px;
 }
-.image-track{
-    display: flex;gap: 4vmin;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-  
+.gallerypage-box{
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
 }
-.image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: center;
+.gallerypage-box img{
+    max-width: 100%;
+    border-radius: 15px;
 }
+
+@media(max-width:1200px){
+    .gallerypage-container{
+        width: calc(100% - 40px);
+        columns:3
+    }
+}
+@media(max-width:760px){
+    .gallerypage-container{
+      
+        columns:2
+    }
+}
+

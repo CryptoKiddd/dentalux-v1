@@ -8,7 +8,7 @@ export  const HeroPage = () => {
       <Hero />
        {/* <Professionals /> */}
       <Services />
-      {/* <HomepageGallery /> */}
+      <HomepageGallery />
       <HeroStats />
       <WorkingHours /> 
       <Footer />

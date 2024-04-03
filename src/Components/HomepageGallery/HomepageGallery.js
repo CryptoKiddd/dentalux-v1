@@ -3,42 +3,71 @@ import "./HomepageGallery.css"
 
 const HomepageGallery = () => {
     return (
-        <div className="homegallery-wrapper">
-            <div className="homegallery-header">
+        <Link to={"/gallery"}>
 
-        <h1>საუკეთესო გარემო</h1>
-            <span>გალერეა</span>
-            </div>
-          {/* <Link to={'/gallery'}> */}
-          
-        <div class="gallery">
-            <span style={{ "--i": 1 }} >
-                <img src="gallery/g15.jpg" alt="" />
-            </span>
-            <span style={{ "--i": 2 }} >
-                <img src="/gallery/g1.jpg" alt="" /> 
-             </span>
-            <span style={{ "--i": 3 }} >
-                <img src="/gallery/g2.jpg" alt="" />
-            </span>
-            <span style={{ "--i": 4 }} >
-                <img src="gallery/g10.jpg" alt="" />
-            </span>
-            <span style={{ "--i": 5 }} >
-                <img src="gallery/g21.jpg" alt="" />
-            </span>
-            <span style={{ "--i": 6 }} >
-                <img src="gallery/g20.jpg" alt="" />
-            </span>
-            <span style={{ "--i": 7 }} >
-                <img src="gallery/g12.jpg" alt="" />
-            </span>
-            <span style={{ "--i": 8 }} >
-                <img src="gallery/g11.jpg" alt="" />
-            </span>
-        </div>
-          {/* </Link> */}
-        </div>
+       <div className="gallery-wrapper">
+         <div className="gallery-header" >
+
+        <h2>გალერია</h2>
+         <p>საუკეთესო გარემო</p>
+         </div>
+
+<div class="marquee">
+  <div class="marquee__group">
+    <img src='/galeria/g1.jpg' alt=''/>
+    {/* <img src='/galeria/g2.jpg' alt=''/> */}
+    <img src='/galeria/g3.jpg' alt=''/>
+    <img src='/galeria/g4.jpg' alt=''/>
+    <img src='/galeria/g5.jpg' alt=''/>
+   
+  </div>
+
+  <div aria-hidden="true" class="marquee__group">
+  <img src='/galeria/g6.jpg' alt=''/>
+    <img src='/galeria/g7.jpg' alt=''/>
+    <img src='/galeria/g8.jpg' alt=''/>
+    <img src='/galeria/g9.jpg' alt=''/>
+    <img src='/galeria/g10.jpg' alt=''/>
+  </div>
+</div>
+
+<div class="marquee marquee--borders" style={{ "--duration": "100s" }}>
+  <div class="marquee__group">
+    <p>საუკეთესო გარემო</p>
+    <p aria-hidden="true">უახლესი ტექნოლოგია</p>
+    <p aria-hidden="true"> პროფესიონალი სტომატოლოგები </p>
+  </div>
+
+  <div aria-hidden="true" class="marquee__group">
+    <p>პროფესიონალი სტომატოლოგები</p>
+    <p>უახლესი ტექნოლოგია</p>
+    <p>საუკეთესო გარემო</p>
+  </div>
+</div>
+
+<div class="marquee marquee--reverse">
+  <div class="marquee__group">
+  <img src='/galeria/11.jpg' alt=''/>
+    <img src='/galeria/g12.jpg' alt=''/>
+    <img src='/galeria/g13.jpg' alt=''/>
+    <img src='/galeria/g14.jpg' alt=''/>
+    <img src='/galeria/g10.jpg' alt=''/>
+  </div>
+
+  <div aria-hidden="true" class="marquee__group">
+  <img src='/galeria/g15.jpg' alt=''/>
+    <img src='/galeria/g16.jpg' alt=''/>
+    <img src='/galeria/17.jpg' alt=''/>
+    <img src='/galeria/g18.jpg' alt=''/>
+    <img src='/galeria/g19.jpg' alt=''/>
+  </div>
+</div>
+
+        
+       </div>
+        </Link>
+     
+
     )
 }
 

@@ -51,7 +51,7 @@
 }
 
 .marquee--borders {
-  border-block: 3px solid #2db2ff;
+  border-block: 2px solid #2db2ff;
   padding-block: 0.75rem
 }
 
@@ -69,6 +69,7 @@
 
 }
 .gallery-header h2 {
+  color: black;
  font-size: 48px;
  font-weight: 500;
  padding: 0 20px;

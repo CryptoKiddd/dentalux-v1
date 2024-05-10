@@ -16,7 +16,7 @@ export const Navigation = () => {
             <span>Dentalux</span>
         </div>
         <nav className='navigation' >
-            <ul className='nav-links' style={{top:menu?'0':'-100%'}}>
+            <ul className='nav-links' style={{top:menu?'0':'-130%'}}>
               <div className="nav-btn">
               <Link to='/' className='link'>მთავარი</Link>
               </div>

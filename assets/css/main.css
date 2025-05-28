@@ -731,6 +731,7 @@ main page start
 
 .hero-carousel-item header p {
   font-family: "f-regular";
+  line-height: 1.5em;
   font-size: 20px;
 }
 
@@ -2155,6 +2156,7 @@ adgils tu sheucvlit servicepage_is css is qvemot iyos sul
 
 .service-img-mainpage {
   width: 536px;
+  object-fit: cover;
   height: 119px;
 }
 

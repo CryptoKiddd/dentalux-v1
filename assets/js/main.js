@@ -169,8 +169,8 @@ $(document).ready(function () {
 // map on contacts
 function initMap() {
     if ($('#map').length > 0) {
-        let location = { lat:  41.64453132367018, lng: 41.62433159707863};
-      
+        let location = { lat: 41.64453132367018, lng: 41.62433159707863 };
+
         let map = new google.maps.Map($('#map')[0], {
             zoom: 17,
             center: location
@@ -783,10 +783,11 @@ const translations = {
         "experience": "გამოცდილება",
         "see_more": 'ვრცლად',
         "dentalux": "დენტალუქსი",
-        "about-company-desc": "„დენტალუქსი“ – პროფესიონალიზმის, გამოცდილებისა და თანამედროვე ტექნოლოგიების სინთეზი. ჩვენ ვართ სტომატოლოგიური კლინიკების ქსელი და დიპლომისშემდგომი უწყვეტი განათლების სასწავლო ცენტრი, რომელიც მდებარეობს ბათუმში და ორიენტირებულია როგორც მაღალხარისხიანი სამედიცინო მომსახურების მიწოდებაზე, ისე ახალგაზრდა სტომატოლოგების პროფესიულ განვითარებაზე. <br> <br> „დენტალუქსის“ გუნდი აერთიანებს კვალიფიციურ ექიმებს, ინოვაციურ მიდგომებსა და პაციენტზე მაქსიმალურად ზრუნვის კულტურას. კლინიკას მინიჭებული აქვს ISO საერთაშორისო სერტიფიკატი, რაც ადასტურებს მომსახურების მაღალ სტანდარტს. წლების განმავლობაში „დენტალუქსი“ გახდა აღიარებული ბრენდი, რომელიც არაერთი პროფესიული ჯილდოთი და სერტიფიკატით არის დაჯილდოებული. ჩვენ ვამაყობთ იმით, რომ ვქმნით სივრცეს, სადაც პაციენტები იღებენ ინდივიდუალურად მორგებულ მკურნალობას, ხოლო ექიმები — მუდმივი განვითარების შესაძლებლობებს.",
+        "about-company-desc1": "„დენტალუქსი“ – პროფესიონალიზმის, გამოცდილებისა და თანამედროვე ტექნოლოგიების სინთეზი. ჩვენ ვართ სტომატოლოგიური კლინიკების ქსელი და დიპლომისშემდგომი უწყვეტი განათლების სასწავლო ცენტრი, რომელიც მდებარეობს ბათუმში და ორიენტირებულია როგორც მაღალხარისხიანი სამედიცინო მომსახურების მიწოდებაზე, ისე ახალგაზრდა სტომატოლოგების პროფესიულ განვითარებაზე.",
+        "about-company-desc2": " „დენტალუქსის“ გუნდი აერთიანებს კვალიფიციურ ექიმებს, ინოვაციურ მიდგომებსა და პაციენტზე მაქსიმალურად ზრუნვის კულტურას. კლინიკას მინიჭებული აქვს ISO საერთაშორისო სერტიფიკატი, რაც ადასტურებს მომსახურების მაღალ სტანდარტს. წლების განმავლობაში „დენტალუქსი“ გახდა აღიარებული ბრენდი, რომელიც არაერთი პროფესიული ჯილდოთი და სერტიფიკატით არის დაჯილდოებული. ჩვენ ვამაყობთ იმით, რომ ვქმნით სივრცეს, სადაც პაციენტები იღებენ ინდივიდუალურად მორგებულ მკურნალობას, ხოლო ექიმები — მუდმივი განვითარების შესაძლებლობებს..",
         "service_header": "ჩვენი სერვისები",
         "dental_implants": "იმპლანტოლოგია",
-        "periodontology":"პაროდონტოლოგია ",
+        "periodontology": "პაროდონტოლოგია ",
         "orthodontics": "ორთოპედიული სტომატოლოგია ",
         "surgery": "ქირურგიული სტომატოლოგია",
         "therapy": "თერაპიული სტომატოლოგია ",
@@ -846,38 +847,38 @@ const translations = {
 
         "therapy_desc": "თერაპიული სტომატოლოგია მიზნად ისახავს კბილების კონსერვატიულ მკურნალობას, რაც გულისხმობს კარიესისა და მისი გართულებული ფორმების – პულპიტისა და პაროდონტიტის დიაგნოსტიკასა და მკურნალობას. „დენტალუქსში“ ჩვენ ვიყენებთ თანამედროვე მეთოდებსა და მაღალტექნოლოგიურ მასალებს, რაც უზრუნველყოფს მკურნალობის მაღალ ეფექტურობასა და გრძელვადიან შედეგს. ჩვენი მიზანია, პაციენტს შევუნარჩუნოთ ბუნებრივი კბილი და დავუბრუნოთ ფუნქციური და ესთეტიკური კომფორტი.",
 
-"caries_treatment": "კარიესის მკურნალობა",
-      "tooth_fillings": "კბილების ამოღება (თეთრი ბუმბეროვანი ბჟენებით)",
-      "pulpitis_and_periodontitis": "პულპიტისა და პაროდონტიტის მკურნალობა",
-      "endodontic_treatment": "ენდოდონტიური (არხების) მკურნალობა მექანიკური და აპარატურული სისტემებით",
-      "temporary_and_permanent_fillings": "დროებითი და მუდმივი ბჟენები",
-      "preventive_visits_and_consultation": "პროფილაქტიკური ვიზიტები და კონსულტაცია",
-      "prosthodontics_desc": "ორთოპედიული სტომატოლოგია მოიცავს კბილთა აღდგენასა და ჩანაცვლებასთან დაკავშირებულ თანამედროვე მეთოდებს, რომლებიც ეხმარება ღეჭვითი ფუნქციის, ესთეტიკისა და პაციენტის კომფორტის აღდგენას. „დენტალუქსში“ ჩვენ ვთავაზობთ ინდივიდუალურად მორგებულ ორთოპედიულ კონსტრუქციებს, რომლებიც პასუხობენ საერთაშორისო სტანდარტებს და უზრუნველყოფენ ბუნებრივ იერსახესა და მაღალ ფუნქციურ ხარისხს. ჩვენი ორთოპედები მუშაობენ უახლესი ტექნოლოგიებითა და მაღალი ხარისხის მასალებით.",
-      "ceramic_crowns_and_bridges": "კერამიკული გვირგვინები და ხიდები (მეტალზე და ცირკონზე)",
-      "zirconia_restorations": "უნაკლო ცირკონის კონსტრუქციები (CAD/CAM ტექნოლოგიით)",
-      "removable_dentures": "მოხსნადი პროთეზები (სრულად და ნაწილობრივ)",
-      "implant_supported_restorations": "იმპლანტზე დაფუძნებული ორთოპედიული კონსტრუქციები",
-      "aesthetic_restorations": "ესთეტიკური კონსტრუქციები წინა ზონის აღდგენისთვის",
-      "temporary_restorations": "დროებითი კონსტრუქციები მკურნალობის შუალედური ეტაპისთვის",
+        "caries_treatment": "კარიესის მკურნალობა",
+        "tooth_fillings": "კბილების ამოღება (თეთრი ბუმბეროვანი ბჟენებით)",
+        "pulpitis_and_periodontitis": "პულპიტისა და პაროდონტიტის მკურნალობა",
+        "endodontic_treatment": "ენდოდონტიური (არხების) მკურნალობა მექანიკური და აპარატურული სისტემებით",
+        "temporary_and_permanent_fillings": "დროებითი და მუდმივი ბჟენები",
+        "preventive_visits_and_consultation": "პროფილაქტიკური ვიზიტები და კონსულტაცია",
+        "prosthodontics_desc": "ორთოპედიული სტომატოლოგია მოიცავს კბილთა აღდგენასა და ჩანაცვლებასთან დაკავშირებულ თანამედროვე მეთოდებს, რომლებიც ეხმარება ღეჭვითი ფუნქციის, ესთეტიკისა და პაციენტის კომფორტის აღდგენას. „დენტალუქსში“ ჩვენ ვთავაზობთ ინდივიდუალურად მორგებულ ორთოპედიულ კონსტრუქციებს, რომლებიც პასუხობენ საერთაშორისო სტანდარტებს და უზრუნველყოფენ ბუნებრივ იერსახესა და მაღალ ფუნქციურ ხარისხს. ჩვენი ორთოპედები მუშაობენ უახლესი ტექნოლოგიებითა და მაღალი ხარისხის მასალებით.",
+        "ceramic_crowns_and_bridges": "კერამიკული გვირგვინები და ხიდები (მეტალზე და ცირკონზე)",
+        "zirconia_restorations": "უნაკლო ცირკონის კონსტრუქციები (CAD/CAM ტექნოლოგიით)",
+        "removable_dentures": "მოხსნადი პროთეზები (სრულად და ნაწილობრივ)",
+        "implant_supported_restorations": "იმპლანტზე დაფუძნებული ორთოპედიული კონსტრუქციები",
+        "aesthetic_restorations": "ესთეტიკური კონსტრუქციები წინა ზონის აღდგენისთვის",
+        "temporary_restorations": "დროებითი კონსტრუქციები მკურნალობის შუალედური ეტაპისთვის",
 
-      "periodontology_desc": "პაროდონტოლოგია ეხება ღრძილების და კბილთა დამჭერი ქსოვილების დაავადებების დიაგნოსტიკასა და მკურნალობას. პაროდონტოზი და პაროდონტიტი გავრცელებული პრობლემებია, რომელთა უყურადღებობა ხშირად იწვევს კბილების დაკარგვას. „დენტალუქსში“ ჩვენ ვახორციელებთ დროულ დიაგნოსტიკას, სამკურნალო და პროფილაქტიკურ ღონისძიებებს, რაც მნიშვნელოვნად აუმჯობესებს პაციენტის ზოგად სტომატოლოგიურ ჯანმრთელობას.",
-      "gum_inflammation_diagnosis_and_treatment": "ღრძილების ანთების დიაგნოსტიკა და მკურნალობა",
-      "professional_dental_cleaning": "ღრძილების პროფესიული წმენდა (სკეილინგი და პოლიშინგი)",
-      "deep_cleaning": "ღრმული წმენდა (ქვედა ღრძილქვეშა წმენდა)",
-      "periodontal_pocket_therapy": "ღრძილის ჯიბეების სამკურნალო თერაპია",
-      "periodontal_maintenance": "პაროდონტოლოგიური კონტროლი და რეგულარული მონიტორინგი",
-      "oral_hygiene_improvement_recommendations": "რეკომენდაციები პირის ღრუს ჰიგიენის გაუმჯობესებისთვის",
+        "periodontology_desc": "პაროდონტოლოგია ეხება ღრძილების და კბილთა დამჭერი ქსოვილების დაავადებების დიაგნოსტიკასა და მკურნალობას. პაროდონტოზი და პაროდონტიტი გავრცელებული პრობლემებია, რომელთა უყურადღებობა ხშირად იწვევს კბილების დაკარგვას. „დენტალუქსში“ ჩვენ ვახორციელებთ დროულ დიაგნოსტიკას, სამკურნალო და პროფილაქტიკურ ღონისძიებებს, რაც მნიშვნელოვნად აუმჯობესებს პაციენტის ზოგად სტომატოლოგიურ ჯანმრთელობას.",
+        "gum_inflammation_diagnosis_and_treatment": "ღრძილების ანთების დიაგნოსტიკა და მკურნალობა",
+        "professional_dental_cleaning": "ღრძილების პროფესიული წმენდა (სკეილინგი და პოლიშინგი)",
+        "deep_cleaning": "ღრმული წმენდა (ქვედა ღრძილქვეშა წმენდა)",
+        "periodontal_pocket_therapy": "ღრძილის ჯიბეების სამკურნალო თერაპია",
+        "periodontal_maintenance": "პაროდონტოლოგიური კონტროლი და რეგულარული მონიტორინგი",
+        "oral_hygiene_improvement_recommendations": "რეკომენდაციები პირის ღრუს ჰიგიენის გაუმჯობესებისთვის",
 
-      "radiology_services_desc": "ზუსტი დიაგნოზი სწორ მკურნალობას საფუძვლად უდევს, და სწორედ ამიტომ რადიოლოგიური კვლევები მნიშვნელოვან როლს ასრულებს სტომატოლოგიურ პრაქტიკაში. „დენტალუქსში“ პაციენტებს ვთავაზობთ თანამედროვე, დაბალდოზიან რენტგენოლოგიურ სერვისებს, რაც უზრუნველყოფს მაქსიმალურ ინფორმაციულ სიზუსტესა და პაციენტის უსაფრთხოებას. ჩვენი გუნდი იყენებს უახლეს ციფრულ აპარატურას და დოზირების საერთაშორისო სტანდარტებს.",
-      "panoramic_xray": "პანორამული რენტგენი (ორთოპანთომოგრამა)",
-      "3d_tomography": "3D ტომოგრაფია (CBCT)",
-      "targeted_xray": "მიზნობრივი რენტგენი (პერაპიკალური და ბიტვინგი)",
-      "implant_planning_radiological_assessment": "იმპლანტაციის წინასწარი დაგეგმვის რადიოლოგიური ანალიზი",
-      "radiology_consultation": "რადიოლოგიური კონსულტაცია და აღწერა",
-      "coming_soon":"ინფორმაცია მალე დაემატება",
-      "marine":"მარინე ტაკიძე",
+        "radiology_services_desc": "ზუსტი დიაგნოზი სწორ მკურნალობას საფუძვლად უდევს, და სწორედ ამიტომ რადიოლოგიური კვლევები მნიშვნელოვან როლს ასრულებს სტომატოლოგიურ პრაქტიკაში. „დენტალუქსში“ პაციენტებს ვთავაზობთ თანამედროვე, დაბალდოზიან რენტგენოლოგიურ სერვისებს, რაც უზრუნველყოფს მაქსიმალურ ინფორმაციულ სიზუსტესა და პაციენტის უსაფრთხოებას. ჩვენი გუნდი იყენებს უახლეს ციფრულ აპარატურას და დოზირების საერთაშორისო სტანდარტებს.",
+        "panoramic_xray": "პანორამული რენტგენი (ორთოპანთომოგრამა)",
+        "3d_tomography": "3D ტომოგრაფია (CBCT)",
+        "targeted_xray": "მიზნობრივი რენტგენი (პერაპიკალური და ბიტვინგი)",
+        "implant_planning_radiological_assessment": "იმპლანტაციის წინასწარი დაგეგმვის რადიოლოგიური ანალიზი",
+        "radiology_consultation": "რადიოლოგიური კონსულტაცია და აღწერა",
+        "coming_soon": "ინფორმაცია მალე დაემატება",
+        "marine": "მარინე ტაკიძე",
 
-    
+
     },
     "en": {
         "home": "Home",
@@ -893,14 +894,15 @@ const translations = {
         "quality": "Quality",
         "modernity": "Modernity",
         "experience": "Experience",
-        "about_us_header": "About Company",
-        "about-company-desc": "Dentalux – a fusion of professionalism, experience, and modern technology. We are a network of dental clinics and a postgraduate continuous education center based in Batumi, dedicated to delivering high-quality dental care and fostering the professional development of young dentists. The Dentalux team combines qualified specialists, innovative approaches, and a strong culture of patient-centered care. Our clinic is ISO certified, ensuring the highest standards of service and quality. Over the years, Dentalux has become a recognized and trusted brand, awarded with multiple professional certifications and honors. We are proud to provide an environment where patients receive personalized treatment and doctors find continuous opportunities for growth.",
+        "about_us_header": "About Clinic",
+        "about-company-desc1": "Dentalux – a fusion of professionalism, experience, and modern technology. We are a network of dental clinics and a postgraduate continuous education center based in Batumi, dedicated to delivering high-quality dental care and fostering the professional development of young dentists.",
+        "about-company-desc2": "The Dentalux team combines qualified specialists, innovative approaches, and a strong culture of patient-centered care. Our clinic is ISO certified, ensuring the highest standards of service and quality. Over the years, Dentalux has become a recognized and trusted brand, awarded with multiple professional certifications and honors. We are proud to provide an environment where patients receive personalized treatment and doctors find continuous opportunities for growth.",
         "service_header": "Our Services",
         "dental_implants": "Implantology",
         "orthodontics": "Prosthodontics",
         "surgery": "Dental Surgery",
         "therapy": "Therapeutic Dentistry",
-"periodontology":"Periodontology",
+        "periodontology": "Periodontology",
         "children": "Pediatric Dentistry",
         "microscope": "Microscopic Dentistry",
         "radiology": "Radiology Services ",
@@ -917,7 +919,7 @@ const translations = {
         "maiaT": "Maia Talikadze",
         "nino": "Nino Khushitashvili",
         "daria": "Pavlova Daria Dimitrievna",
-        "marine":"Marine Takidze",
+        "marine": "Marine Takidze",
         "0": "Monday",
         "1": "Tuesday",
         "2": "Wednesday",
@@ -928,7 +930,7 @@ const translations = {
         "contact_page": "Contact Page",
         "location1": " Zurab Gorgiladze 69, Batumi",
         "location2": " King Pharnavaz 140, Batumi",
-        "main_slider_header1": "DENATALUX",
+        "main_slider_header1": "Dentalux",
         "main_slider_header2": "Wide Range Of Services",
         "main_slider_text": "Transform your smile with expert dental care, modern technology, and personalized treatments for lasting results.",
         "main_slider_text2": "Discover a wide range of dental services designed for your comfort and oral health. From routine check-ups to advanced procedures, we ensure top-notch care every step of the way.",
@@ -954,43 +956,43 @@ const translations = {
         "pediatric_hygiene_and_fluoride": "Dental hygiene and fluoride application",
         "pediatric_fissure_sealing": "Fissure sealing (sealants)",
         "pediatric_parental_consultations": "Parental consultations on children’s oral health",
-        "coming_soon":"Information will be added soon",
-
-        
-
-    "therapy_desc": "Therapeutic dentistry focuses on the conservative treatment of teeth, including the diagnosis and treatment of caries and its complications — pulpitis and periodontitis. At Dentalux, we apply advanced methods and high-quality materials to ensure effective and long-lasting results. Our goal is to preserve the patient’s natural tooth structure while restoring both function and aesthetics.",
-
-      "caries_treatment": "Caries treatment",
-      "tooth_fillings": "Tooth fillings (white composite restorations)",
-      "pulpitis_and_periodontitis": "Treatment of pulpitis and periodontitis",
-      "endodontic_treatment": "Endodontic (root canal) treatment using mechanical and instrumental systems",
-      "temporary_and_permanent_fillings": "Temporary and permanent fillings",
-      "preventive_visits_and_consultation": "Preventive visits and consultation",
-
-      "prosthodontics_desc": "Prosthodontics focuses on the restoration and replacement of missing or damaged teeth using modern techniques that improve chewing function, aesthetics, and overall patient comfort. At Dentalux, we offer custom-made prosthetic solutions that meet international standards and provide patients with natural appearance and high functional value. Our prosthodontists use advanced technologies and high-quality materials for optimal results.",
-      "ceramic_crowns_and_bridges": "Ceramic crowns and bridges (metal-based or zirconia)",
-      "zirconia_restorations": "Full-contour zirconia restorations (CAD/CAM technology)",
-      "removable_dentures": "Removable dentures (complete and partial)",
-      "implant_supported_restorations": "Implant-supported prosthetic restorations",
-      "aesthetic_restorations": "Aesthetic restorations for front zone restoration",
-      "temporary_restorations": "Temporary restorations for interim treatment phases",
+        "coming_soon": "Information will be added soon",
 
 
-      "periodontology_desc": "Periodontology focuses on the diagnosis and treatment of gum diseases and supporting structures of the teeth. Conditions such as gingivitis and periodontitis are common and, if left untreated, can lead to tooth loss. At Dentalux, we provide timely diagnosis, therapeutic and preventive care to significantly improve overall dental health.",
-    "gum_inflammation_diagnosis_and_treatment": "Diagnosis and treatment of gum inflammation",
-    "professional_dental_cleaning": "Professional dental cleaning (scaling and polishing)",
-    "deep_cleaning": "Deep cleaning (subgingival scaling)",
-    "periodontal_pocket_therapy": "Treatment of periodontal pockets",
-    "periodontal_maintenance": "Periodontal maintenance and regular monitoring",
-    "oral_hygiene_improvement_recommendations": "Oral hygiene improvement recommendations",
 
-"radiology_services_desc": "Accurate diagnosis is the foundation of successful treatment, and radiological imaging plays a vital role in dental care. At Dentalux, we offer state-of-the-art, low-dose radiology services to provide precise diagnostic information while ensuring patient safety. Our team uses advanced digital equipment in accordance with international radiation standards.",
-    "panoramic_xray": "Panoramic X-ray (Orthopantomogram)",
-    "3d_tomography": "3D tomography (CBCT)",
-    "targeted_xray": "Targeted X-rays (periapical and bitewing)",
-    "implant_planning_radiological_assessment": "Radiological assessment for implant planning",
-    "radiology_consultation": "Radiology consultation and interpretation",
-    
+        "therapy_desc": "Therapeutic dentistry focuses on the conservative treatment of teeth, including the diagnosis and treatment of caries and its complications — pulpitis and periodontitis. At Dentalux, we apply advanced methods and high-quality materials to ensure effective and long-lasting results. Our goal is to preserve the patient’s natural tooth structure while restoring both function and aesthetics.",
+
+        "caries_treatment": "Caries treatment",
+        "tooth_fillings": "Tooth fillings (white composite restorations)",
+        "pulpitis_and_periodontitis": "Treatment of pulpitis and periodontitis",
+        "endodontic_treatment": "Endodontic (root canal) treatment using mechanical and instrumental systems",
+        "temporary_and_permanent_fillings": "Temporary and permanent fillings",
+        "preventive_visits_and_consultation": "Preventive visits and consultation",
+
+        "prosthodontics_desc": "Prosthodontics focuses on the restoration and replacement of missing or damaged teeth using modern techniques that improve chewing function, aesthetics, and overall patient comfort. At Dentalux, we offer custom-made prosthetic solutions that meet international standards and provide patients with natural appearance and high functional value. Our prosthodontists use advanced technologies and high-quality materials for optimal results.",
+        "ceramic_crowns_and_bridges": "Ceramic crowns and bridges (metal-based or zirconia)",
+        "zirconia_restorations": "Full-contour zirconia restorations (CAD/CAM technology)",
+        "removable_dentures": "Removable dentures (complete and partial)",
+        "implant_supported_restorations": "Implant-supported prosthetic restorations",
+        "aesthetic_restorations": "Aesthetic restorations for front zone restoration",
+        "temporary_restorations": "Temporary restorations for interim treatment phases",
+
+
+        "periodontology_desc": "Periodontology focuses on the diagnosis and treatment of gum diseases and supporting structures of the teeth. Conditions such as gingivitis and periodontitis are common and, if left untreated, can lead to tooth loss. At Dentalux, we provide timely diagnosis, therapeutic and preventive care to significantly improve overall dental health.",
+        "gum_inflammation_diagnosis_and_treatment": "Diagnosis and treatment of gum inflammation",
+        "professional_dental_cleaning": "Professional dental cleaning (scaling and polishing)",
+        "deep_cleaning": "Deep cleaning (subgingival scaling)",
+        "periodontal_pocket_therapy": "Treatment of periodontal pockets",
+        "periodontal_maintenance": "Periodontal maintenance and regular monitoring",
+        "oral_hygiene_improvement_recommendations": "Oral hygiene improvement recommendations",
+
+        "radiology_services_desc": "Accurate diagnosis is the foundation of successful treatment, and radiological imaging plays a vital role in dental care. At Dentalux, we offer state-of-the-art, low-dose radiology services to provide precise diagnostic information while ensuring patient safety. Our team uses advanced digital equipment in accordance with international radiation standards.",
+        "panoramic_xray": "Panoramic X-ray (Orthopantomogram)",
+        "3d_tomography": "3D tomography (CBCT)",
+        "targeted_xray": "Targeted X-rays (periapical and bitewing)",
+        "implant_planning_radiological_assessment": "Radiological assessment for implant planning",
+        "radiology_consultation": "Radiology consultation and interpretation",
+
     }
 
 

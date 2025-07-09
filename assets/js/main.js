@@ -235,7 +235,7 @@ const setNavigationHeight = () => {
         transition: "height 0.3s ease-in-out, top 0.3s ease-in-out"
     });
 
-    logo.stop().animate({ paddingTop: 0 }, 200); // Reset logo padding on initial load
+    logo.stop().animate({ paddingTop: 10 }, 200); // Reset logo padding on initial load
 };
 
 
@@ -266,7 +266,7 @@ if (isMobile) {
             if (navigation.height() > 100) {
                 navigation.css({ height: "100px" });
                 logo.stop().animate({ paddingTop: 0, width: 100, marginTop: -20 }, 200); // Shrink logo when navigation shrinks
-                $('#nav-icon1').animate({ marginTop: -15 }, 200)
+                $('#nav-icon1').animate({ marginTop: -25 }, 100)
             }
             if (currentScroll > 200) {
                 navigation.css({ top: "-250px" }); // Hide navigation if already at the minimum height

@@ -258,7 +258,8 @@ if (isMobile) {
         if (currentScroll === 0) {
             setNavigationHeight();
             logo.stop().animate({ paddingTop: 0, width: 120, marginTop: 0 }, 200); // Shrink logo when navigation shrinks
-            $('#nav-icon1').animate({ marginTop: 0 }, 200)
+            $('#nav-icon1').animate({ marginTop: 0 }, 100)
+            $(".move-req").animate({ top: 45 }, 100); // Reset margin for request button
 
 
         } else if (currentScroll > lastScrollTop) {
@@ -267,6 +268,7 @@ if (isMobile) {
                 navigation.css({ height: "100px" });
                 logo.stop().animate({ paddingTop: 0, width: 100, marginTop: -20 }, 200); // Shrink logo when navigation shrinks
                 $('#nav-icon1').animate({ marginTop: -25 }, 100)
+                  $(".move-req").animate({ top: 31 }, 100);
             }
             if (currentScroll > 200) {
                 navigation.css({ top: "-250px" }); // Hide navigation if already at the minimum height
@@ -319,7 +321,7 @@ $(document).ready(function () {
     let currentPage = window.location.pathname.split("/").pop(); // Get current page filename
 
     if (currentPage === "" || currentPage === "index.html") {
-        currentPage = "mainpage.html"; // Default to index.html if empty
+        currentPage = "/"; // Default to index.html if empty
     }
 
     $(".nav-top li a, .nav-bottom li a").each(function () {
@@ -352,7 +354,7 @@ gsap.from(".nav-top li", {
     duration: 1,
     ease: "power2.out",
     stagger: 0.2, // Stagger each item for a cool effect
-    delay: 0.5
+    delay: 0.1
 });
 
 // Animate nav links (bottom)
@@ -362,7 +364,7 @@ gsap.from(".nav-bottom li", {
     duration: 1,
     ease: "power2.out",
     stagger: 0.2,
-    delay: 0.8
+    delay: 0.2
 });
 
 // Animate social media icons with bounce effect
@@ -422,13 +424,13 @@ if (currentPage === "" || currentPage === "index.html") {
         });
 
         gsap.from(".index-about main p", {
-            y: 20, // Move slightly up
+            x: 50, // Move slightly up
             opacity: 0,
             duration: 1,
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".index-about",
-                start: "top 75%", // Trigger slightly later
+                start: "top 65%", // Trigger slightly later
             }
         });
 
@@ -542,99 +544,10 @@ if (currentPage === "services.html") {
 
 }
 
-if (currentPage === "achievments.html") {
-    document.addEventListener("DOMContentLoaded", function () {
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Header animation (fade in + move up)
-        gsap.from(".servicepage header p", {
-            x: -100,
-            opacity: 0,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: ".servicepage",
-                start: "top 80%",
-            }
-        });
-
-        // Achievements list animation (staggered slide-in effect)
-        gsap.from(".achievements li", {
-            x: -50, // Slide in from the left
-            opacity: 0,
-            duration: 1,
-            ease: "power2.out",
-            stagger: 0.3, // Items appear one after another
-            scrollTrigger: {
-                trigger: ".achievements",
-                start: "top 75%",
-            }
-        });
-
-        // Pagination animation (fade-in + slide up)
-        gsap.from(".pagination", {
-            y: 30,
-            opacity: 0,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: ".pagination",
-                start: "top 80%",
-            }
-        });
-
-        // Icon animations (pop effect when scrolling)
-        gsap.from(".icon.pdf-icon, .icon.download-icon", {
-            scale: 0.5,
-            opacity: 0,
-            duration: 0.8,
-            ease: "back.out(1.7)", // Bounce effect
-            stagger: 0.2,
-            scrollTrigger: {
-                trigger: ".achievements",
-                start: "top 75%",
-            }
-        });
-    });
-
-}
 
 
 
-if (currentPage === "projects.html" || currentPage === "blog.html" || currentPage === "news.html") {
-    $(document).ready(function () {
-        gsap.from("header p", {
-            x: -100,
-            opacity: 0,
-            duration: 1,
-            ease: "power2.out"
-        });
 
-        gsap.from(".projects li", {
-            opacity: 0,
-            y: 50,
-            stagger: 0.3,
-            duration: 1,
-            ease: "power3.out"
-        });
-
-        gsap.from(".pagination .icon, .pagination a", {
-            opacity: 0,
-            y: 10,
-            stagger: 0.2,
-            duration: 1,
-            ease: "back.out(1.7)"
-        });
-
-        $(".pagination a").on("mouseenter", function () {
-            gsap.to($(this), { scale: 1.2, duration: 0.2, ease: "back.out(1.7)" });
-        });
-
-        $(".pagination a").on("mouseleave", function () {
-            gsap.to($(this), { scale: 1, duration: 0.2, ease: "back.out(1.7)" });
-        });
-    });
-}
 
 if (currentPage === "textpage.html") {
     gsap.from("header p", {
@@ -719,19 +632,23 @@ if (currentPage === "contact.html") {
     })
 
 }
-$(".project-carousel-wrapper li").each(function (index, element) {
-    gsap.from(element, {
-        opacity: 0,
-        y: 50, // Start slightly below
-        duration: 0.6, // Duration per item
-        ease: "power3.out",
-        scrollTrigger: {
-            trigger: element, // Trigger each <li> separately
-            start: "top 85%", // Start when each <li> enters 85% of viewport
-            toggleActions: "play none none none"
-        }
-    });
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".project-carousel-wrapper li").forEach((element, index) => {
+  gsap.from(element, {
+    opacity: 0,
+    y: 80,
+    duration: 0.8,
+    ease: "power3.out",
+    delay: index * 0.1, // slight stagger
+    scrollTrigger: {
+      trigger: element,
+      start: "top 85%",
+      toggleActions: "play none none none",
+    }
+  });
 });
+
 
 if ($(".working-hours-wrapper").length > 0) {
 
@@ -782,6 +699,7 @@ const translations = {
         "modernity": "თანამედროვეობა",
         "experience": "გამოცდილება",
         "see_more": 'ვრცლად',
+        "dentist":"სტომატოლოგი",
         "dentalux": "დენტალუქსი",
         "about-company-desc1": "„დენტალუქსი“ – პროფესიონალიზმის, გამოცდილებისა და თანამედროვე ტექნოლოგიების სინთეზი. ჩვენ ვართ სტომატოლოგიური კლინიკების ქსელი და დიპლომისშემდგომი უწყვეტი განათლების სასწავლო ცენტრი, რომელიც მდებარეობს ბათუმში და ორიენტირებულია როგორც მაღალხარისხიანი სამედიცინო მომსახურების მიწოდებაზე, ისე ახალგაზრდა სტომატოლოგების პროფესიულ განვითარებაზე.",
         "about-company-desc2": " „დენტალუქსის“ გუნდი აერთიანებს კვალიფიციურ ექიმებს, ინოვაციურ მიდგომებსა და პაციენტზე მაქსიმალურად ზრუნვის კულტურას. კლინიკას მინიჭებული აქვს ISO საერთაშორისო სერტიფიკატი, რაც ადასტურებს მომსახურების მაღალ სტანდარტს. წლების განმავლობაში „დენტალუქსი“ გახდა აღიარებული ბრენდი, რომელიც არაერთი პროფესიული ჯილდოთი და სერტიფიკატით არის დაჯილდოებული. ჩვენ ვამაყობთ იმით, რომ ვქმნით სივრცეს, სადაც პაციენტები იღებენ ინდივიდუალურად მორგებულ მკურნალობას, ხოლო ექიმები — მუდმივი განვითარების შესაძლებლობებს..",
@@ -883,6 +801,7 @@ const translations = {
     "en": {
         "home": "Home",
         "blog": "Blog",
+        "dentist":"Dentist",
         "team": "Our Team",
         "about": "About",
         "services": "Services",

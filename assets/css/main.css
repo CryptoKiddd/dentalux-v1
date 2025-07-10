@@ -3048,6 +3048,12 @@ padding-bottom: 80px;
   }
   .textpage-img{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textpage img{
+    width: 350px;
   }
   footer{
     padding-top: 50px;
@@ -3161,10 +3167,7 @@ padding-bottom: 80px;
 .service-arr{
   display: none;
 }
-.project-carousel-wrapper .image-container{
-  width: 175px;
-  height: 195px;
-}
+
 .project-carousel-wrapper li{
   width: 40%;
 }
@@ -3411,10 +3414,7 @@ input:checked + .slider:before {
   .project-carousel-wrapper li{
     width: 87%;
   }
-  .project-carousel-wrapper .image-container {
-    width: 254px;
-    height: 293px;
-}
+ 
 .team-inner {
   margin-top: 120px;
 }

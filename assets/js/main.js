@@ -266,7 +266,6 @@ if (isMobile) {
         console.log(currentScroll)
 
         // Change background color based on scroll position
-        navigation.css("background-color", "#fff2d769");
 
         // Scroll at the top (reset to initial height)
         if (currentScroll === 0) {
@@ -283,7 +282,7 @@ if (isMobile) {
 
         } else {
             // Scrolling up
-            navigation.css({ top: "0px", }); // Show navigation and shrink height
+            navigation.css({ top: "0px", height:"137px" }); // Show navigation and shrink height
         }
 
         lastScrollTop = currentScroll; // Update scroll position
@@ -857,7 +856,7 @@ const translations = {
         "location1": " Zurab Gorgiladze 69, Batumi",
         "location2": " King Pharnavaz 140, Batumi",
         "main_slider_header1": "Dentalux",
-        "main_slider_header2": "Wide Range Of Services",
+        "main_slider_header2": "Wide range of services",
         "main_slider_text": "Transform your smile with expert dental care, modern technology, and personalized treatments for lasting results.",
         "main_slider_text2": "Discover a wide range of dental services designed for your comfort and oral health. From routine check-ups to advanced procedures, we ensure top-notch care every step of the way.",
 

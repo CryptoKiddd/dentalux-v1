@@ -483,8 +483,10 @@ nav ul a.active-navlink{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-top: 1px solid rgba(162, 162, 162, 0.2);
-  border-bottom: 1px solid rgba(162, 162, 162, 0.2);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 15px;
+  padding: 5px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2409,6 +2411,7 @@ hamburger
   padding: 7px;
   cursor: pointer;
   color: white;
+font-family: 'f-regular-caps';
   border-radius: 20px;
 }
 .navigation-mainpage ul{
@@ -2447,6 +2450,7 @@ padding-bottom: 80px;
   position: absolute;
   right: 120px;
   bottom: 20px;
+  font-family: 'f-regular-caps';
 }
 .project-carousel-wrapper .container{
   display: -webkit-box;
@@ -2655,7 +2659,6 @@ padding-bottom: 80px;
         -ms-flex-direction: column;
             flex-direction: column;
     top: 0;
-background-color: var(--secondary-color);
 
     -webkit-box-align: start;
 

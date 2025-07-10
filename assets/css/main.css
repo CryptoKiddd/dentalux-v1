@@ -3347,9 +3347,7 @@ input:checked + .slider:before {
   .working-hours-container {
       height: 100vh;
   }
-  .contactpage{
-    margin-top: 100px;
-  }
+ 
   .mobile-service-display{
     display: flex;
     flex-direction: column;

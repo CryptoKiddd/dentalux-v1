@@ -282,7 +282,7 @@ if (isMobile) {
 
         } else {
             // Scrolling up
-            navigation.css({ top: "0px", height:"137px" }); // Show navigation and shrink height
+            navigation.css({ top: "0px", height:"130px" }); // Show navigation and shrink height
         }
 
         lastScrollTop = currentScroll; // Update scroll position

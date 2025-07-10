@@ -202,7 +202,7 @@ if (hamburger.length > 0) {
 
         if (navigation.outerHeight(true) < 180) {
             navigation.css("overflow-y", "auto")
-                .animate({ height: "550px", paddingBottom: 50 }, 300, function () {
+                .animate({ height: "600px", paddingBottom: 50 }, 300, function () {
                     navigation.css("overflow-y", "hidden");
                 });
 

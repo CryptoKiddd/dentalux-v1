@@ -412,7 +412,7 @@ a {
 
 .navigation {
   position: fixed;
-  background-color:var(--secondary-color); /* 4% opacity */;
+  background-color:#FFF2D7; /* 4% opacity */;
   opacity: 1;
   height: 220px;
   padding-inline: var(--fullhd-padding);
@@ -1532,7 +1532,7 @@ footer ul li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--border-color);
   position: relative;
 }
 
@@ -2655,7 +2655,7 @@ padding-bottom: 80px;
         -ms-flex-direction: column;
             flex-direction: column;
     top: 0;
-    background: white;
+background-color: var(--secondary-color);
 
     -webkit-box-align: start;
 
@@ -2781,6 +2781,17 @@ padding-bottom: 80px;
 
 
 
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* dim background */
+  z-index: 999; /* higher than most elements, but below menu if needed */
+  display: none;
+   transition: opacity 0.3s ease;
+}
 
 
 

@@ -192,6 +192,7 @@ $(document).ready(function () {
 
 // hamburger menu
 const hamburger = $('#nav-icon1');
+const overlay = $('.nav-overlay');
 
 if (hamburger.length > 0) {
     hamburger.click(function () {
@@ -201,18 +202,31 @@ if (hamburger.length > 0) {
 
         if (navigation.outerHeight(true) < 180) {
             navigation.css("overflow-y", "auto")
-                .animate({ height: "100%", paddingBottom: 50 }, 300, function () {
+                .animate({ height: "550px", paddingBottom: 50 }, 300, function () {
                     navigation.css("overflow-y", "hidden");
                 });
 
             $("body").css("overflow", "hidden");
+            overlay.fadeIn(); // SHOW OVERLAY
         } else {
             navigation.animate({ height: "130px" }, 300, function () {
                 $("body").css("overflow", "auto");
             });
+
+            overlay.fadeOut(); // HIDE OVERLAY
         }
     });
+
+    // Optional: clicking on overlay closes the menu
+    overlay.click(function () {
+        hamburger.removeClass('open');
+        $(".navigation").animate({ height: "130px" }, 300, function () {
+            $("body").css("overflow", "auto");
+        });
+        overlay.fadeOut();
+    });
 }
+
 
 // navigation scroll effect 
 
@@ -252,31 +266,24 @@ if (isMobile) {
         console.log(currentScroll)
 
         // Change background color based on scroll position
-        navigation.css("background-color", "#FFF2D7");
+        navigation.css("background-color", "#fff2d769");
 
         // Scroll at the top (reset to initial height)
         if (currentScroll === 0) {
             setNavigationHeight();
-            logo.stop().animate({ paddingTop: 0, width: 120, marginTop: 0 }, 200); // Shrink logo when navigation shrinks
-            $('#nav-icon1').animate({ marginTop: 0 }, 100)
-            $(".move-req").animate({ top: 45 }, 100); // Reset margin for request button
+           
 
 
         } else if (currentScroll > lastScrollTop) {
             // Scrolling down
-            if (navigation.height() > 100) {
-                navigation.css({ height: "100px" });
-                logo.stop().animate({ paddingTop: 0, width: 100, marginTop: -20 }, 200); // Shrink logo when navigation shrinks
-                $('#nav-icon1').animate({ marginTop: -25 }, 100)
-                  $(".move-req").animate({ top: 31 }, 100);
-            }
+    
             if (currentScroll > 200) {
                 navigation.css({ top: "-250px" }); // Hide navigation if already at the minimum height
             }
 
         } else {
             // Scrolling up
-            navigation.css({ top: "0px", height: "100px" }); // Show navigation and shrink height
+            navigation.css({ top: "0px", }); // Show navigation and shrink height
         }
 
         lastScrollTop = currentScroll; // Update scroll position

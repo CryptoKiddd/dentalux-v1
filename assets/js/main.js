@@ -167,28 +167,7 @@ $(document).ready(function () {
 });
 
 // map on contacts
-function initMap() {
-    if ($('#map').length > 0) {
-        let location = { lat: 41.64453132367018, lng: 41.62433159707863 };
 
-        let map = new google.maps.Map($('#map')[0], {
-            zoom: 17,
-            center: location
-        });
-
-        let marker = new google.maps.Marker({
-            position: location,
-            map: map,
-            icon: 'assets/images/logo.png'
-        });
-    }
-}
-
-$(document).ready(function () {
-    if ($('#map').length > 0) {
-        initMap();
-    }
-});
 
 // hamburger menu
 const hamburger = $('#nav-icon1');

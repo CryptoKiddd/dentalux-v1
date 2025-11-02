@@ -30,8 +30,7 @@
     <meta name="twitter:image" content="https://www.dentalux.ge/assets/images/og-image.jpg" />
 
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDook2Ob-M6wTQQxZdO_F9D1cvbQg79PIo&callback=initMap"
-        async defer></script>
+   
 
 </head>
 
@@ -138,9 +137,9 @@
             <ul class="contact-bar">
 
                 <li>
-                    <a href="telto:+0322110206">
+                    <a href="telto:+0 514 221 010">
                         <div class="icon phone"></div>
-                        0422 200 330
+                         514 221 010
                     </a>
                 </li>
                 <li>
@@ -151,14 +150,14 @@
                     </a>
                 </li>
                 <li>
-                    <a   data-key="location1" target="_blank" href="">
+                    <a   data-key="location1" target="_blank" href="https://www.google.com/maps/place/69+Zurab+Gorgiladze+St,+Batumi+6004/@41.6443507,41.6245063,17z/data=!3m1!4b1!4m6!3m5!1s0x4067866d393fac69:0x4d18ad4212c5be52!8m2!3d41.6443507!4d41.6245063!16s%2Fg%2F11mdbg4v0n?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D">
                         <div class="icon location"></div>
                         ზურაბ გორგილაძის 69, ბათუმი
                     </a>
 
                 </li>
                 <li>
-                    <a data-key="location2" target="_blank" href="">
+                    <a data-key="location2" target="_blank" href="https://www.google.com/maps/place/140+Parnavaz+Mepe+St,+Batumi/@41.6443507,41.6245063,17z/data=!4m6!3m5!1s0x40678613310efec1:0x4fb8b3a04f33219e!8m2!3d41.6447767!4d41.6278382!16s%2Fg%2F11tdkbsw7n?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D">
                         <div  class="icon location"></div>
 
                         ფარნავაზ მეფის 140, ბათუმი
@@ -224,14 +223,7 @@
             <ul class="footer-icons-list">
                 <li class="footer-style-li"></li>
 
-                <li>
-
-                    <a href="callto:0322110206">
-                        <div class="icon whatsapp footer-wa-icon"></div>
-                        <div class="icon phone"></div>
-                        0322-110-206
-                    </a>
-                </li>
+             
                 <li>
 
                     <a href="callto:+995514221010">
@@ -305,7 +297,49 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="assets/js/owl.carousel.min.js"></script>
+    
     <script defer src="assets/js/main.js"></script>
+
+
+
+
+
+<script>
+     function initMap() {
+    if ($('#map').length > 0) {
+      const location = { lat: 41.64453132367018, lng: 41.62433159707863 };
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 17,
+        center: location,
+      });
+
+      // Create a new Advanced Marker
+      const marker = new google.maps.marker({
+        position: location,
+        map,
+        title: "Our Location",
+        content: (() => {
+          const img = document.createElement("img");
+          img.src = "assets/images/logo.png";
+          img.style.width = "40px";
+          img.style.height = "40px";
+          return img;
+        })(),
+      });
+    }
+  }
+
+  $(document).ready(function () {
+    if ($('#map').length > 0) {
+      initMap();
+    }
+  });
+</script>
+
+    
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmx7OteosRL9zeghw754wNgU36e3Ks1eM&libraries=marker&callback=initMap"
+        async defer></script>
 </body>
 
 </html>
